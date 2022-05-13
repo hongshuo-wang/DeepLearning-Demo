@@ -1,0 +1,5 @@
+**/image
+**/video
+**/__pycache__
+**/*.zip
+**/*.pkl
