@@ -2,5 +2,6 @@
 **/video
 **/__pycache__
 **/*.zip
+!yalefaces.zip
 **/*.pkl
 **/.idea
