@@ -10,7 +10,7 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # https://github.com/Shiva486/facial_recognition/blob/master/res10_300x300_ssd_iter_140000.caffemodel
 # 加载模型
 face_detector = cv2.dnn.readNetFromCaffe('./weight/deploy.prototxt',
-                                             './weight/res10_300x300_ssd_iter_140000.caffemodel')
+                                         './weight/res10_300x300_ssd_iter_140000.caffemodel')
 
 # 检测人脸
 # 原图尺寸
@@ -42,7 +42,6 @@ for index in range(num_of_faces):
         lx, ly, rx, ry = locations.astype('int')
         # 绘制
         cv2.rectangle(img_copy, (lx, ly), (rx, ry), (0, 255, 0), 5)
-
 
 plt.imshow(cv2.cvtColor(img_copy, cv2.COLOR_BGR2RGB))
 plt.show()
