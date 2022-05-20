@@ -1,7 +1,6 @@
 **/image
 **/video
 **/__pycache__
-**/*.zip
-!yalefaces.zip
-**/*.pkl
+
+*.pkl
 **/.idea
